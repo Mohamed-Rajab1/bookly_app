@@ -1,4 +1,3 @@
-import 'package:bokly_app/constants.dart';
 import 'package:bokly_app/features/splash/presentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
