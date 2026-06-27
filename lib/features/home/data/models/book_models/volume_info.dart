@@ -80,7 +80,14 @@ class VolumeInfo extends Equatable {
         : PanelizationSummary.fromJson(
             json['panelizationSummary'] as Map<String, dynamic>,
           ),
-    imageLinks: ImageLinks.fromJson(json['imageLinks'] as Map<String, dynamic>),
+    imageLinks: json['imageLinks'] != null
+        ? ImageLinks.fromJson(json['imageLinks'] as Map<String, dynamic>)
+        : const ImageLinks(
+            smallThumbnail:
+                'https://previews.123rf.com/images/alonastep/alonastep1702/alonastep170200624/72245600-cross-sign-element-red-x-icon-isolated-on-white-background-simple-mark-graphic-design-round-shape.jpg',
+            thumbnail:
+                'https://previews.123rf.com/images/alonastep/alonastep1702/alonastep170200624/72245600-cross-sign-element-red-x-icon-isolated-on-white-background-simple-mark-graphic-design-round-shape.jpg',
+          ),
     language: json['language'] as String?,
     previewLink: json['previewLink'] as String?,
     infoLink: json['infoLink'] as String?,
@@ -105,7 +112,7 @@ class VolumeInfo extends Equatable {
     'allowAnonLogging': allowAnonLogging,
     'contentVersion': contentVersion,
     'panelizationSummary': panelizationSummary?.toJson(),
-    'imageLinks': imageLinks?.toJson(),
+    'imageLinks': imageLinks.toJson(),
     'language': language,
     'previewLink': previewLink,
     'infoLink': infoLink,

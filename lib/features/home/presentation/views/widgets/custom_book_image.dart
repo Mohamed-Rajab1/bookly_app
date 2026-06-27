@@ -1,4 +1,3 @@
-import 'package:bokly_app/core/utils/assets.dart';
 import 'package:flutter/material.dart';
 
 class CustomBookImage extends StatelessWidget {
