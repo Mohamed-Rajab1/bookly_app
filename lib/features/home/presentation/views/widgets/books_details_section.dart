@@ -1,7 +1,7 @@
 import 'package:bokly_app/core/utils/styles.dart';
 import 'package:bokly_app/features/home/presentation/views/widgets/book_rating.dart';
 import 'package:bokly_app/features/home/presentation/views/widgets/books_action.dart';
-import 'package:bokly_app/features/home/presentation/views/widgets/custom_book_item.dart';
+import 'package:bokly_app/features/home/presentation/views/widgets/custom_book_image.dart';
 import 'package:flutter/material.dart';
 
 class BooksDetailsSection extends StatelessWidget {
@@ -14,7 +14,9 @@ class BooksDetailsSection extends StatelessWidget {
       children: [
         Padding(
           padding: EdgeInsets.symmetric(horizontal: width * .2),
-          child: const CustomBookImage(),
+          child: const CustomBookImage(
+            imageUrl: 'assets/images/success_book.png',
+          ),
         ),
         const SizedBox(height: 43),
         Text(
