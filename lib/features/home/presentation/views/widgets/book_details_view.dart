@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:bokly_app/features/home/data/models/book_models/book_model.dart';
 import 'package:bokly_app/features/home/presentation/manager/similar_books_cubit/similar_books_cubit.dart';
 import 'package:bokly_app/features/home/presentation/views/widgets/book_details_view_body.dart';
@@ -26,6 +24,6 @@ class _BookDetailsViewState extends State<BookDetailsView> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: BookDetailsViewBody());
+    return Scaffold(body: BookDetailsViewBody(bookModel: widget.bookModel));
   }
 }

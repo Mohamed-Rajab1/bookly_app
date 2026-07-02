@@ -14,7 +14,7 @@ class CustomSearchTextField extends StatelessWidget {
         suffixIcon: IconButton(
           onPressed: () {},
           icon: Opacity(
-            opacity: 8,
+            opacity: 0.8,
             child: FaIcon(FontAwesomeIcons.magnifyingGlass, size: 22),
           ),
         ),
